@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+}
+.heading {
+  font-family: poppins;
+  color: rgba(202, 8, 8, 0.885);
+  text-shadow: 1px 1px 3px black;
+}
+.btn{
+  background-color:rgba(202, 8, 8, 0.885);;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 3px;
+  color: rgb(56, 52, 52);
+  font-family: poppins;
+  font-weight: 700;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 14px 4px rgb(185, 181, 181);
+  height: 500px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+#gameCard div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(152, 0, 61, 0.921);
+  font-size: 50px;
+}
+
+.cardback {
+  opacity: 0.8;
+
+  content: url("./assests/playing-card-back-side-vector.jpg");
+}
+
+#gameCard div:hover {
+  cursor: pointer;
+}
+
+.won {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(139, 4, 4, 0.52);
+  width: 500px;
+  height: 500px;
+  font-size: 250px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+  }
+
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 1px 1px 14px 4px rgb(185, 181, 181);
+    height: 500px;
+    width: 300px;
+    border-radius: 8px;
+  }
+  .won {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(183, 8, 8, 0.606);
+    width: 500px;
+    height: 500px;
+    font-size: 190px;
+    margin-left: 0px;
+  }
+}
