@@ -14,8 +14,6 @@ A restart button to reset the game board and shuffle the cards.
 
 Responsive design for both desktop and mobile devices.
 
-Clean, well-documented code.
-
 
 How to Play
 
